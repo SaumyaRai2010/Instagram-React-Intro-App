@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
@@ -31,7 +31,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="logo"></img>
+          <img src={logo} alt="logo" className="logoSaumyaName"></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("home")}
             >
-              Home
+              HOME
             </Nav.Link>
             <Nav.Link
               href="#skills"
@@ -54,7 +54,7 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              Skills
+              SKILLS
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -63,7 +63,7 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Projects
+              PROJECTS
             </Nav.Link>
 
             <span className="navbar-text">
@@ -79,7 +79,7 @@ const NavBar = () => {
                 </a>
               </div>
               <button className="vvd" onClick={() => console.log("connect")}>
-                <span>Let's Connect</span>
+                <span>CONNECT WITH ME</span>
               </button>
             </span>
           </Nav>

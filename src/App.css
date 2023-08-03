@@ -73,6 +73,12 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+.logoSaumyaName {
+  width: 10rem; /* Set your desired width value here */
+  height: 10rem; /* The height will adjust automatically based on the aspect ratio */
+  margin-right: 1.5rem;
+}
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -81,12 +87,15 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
+  display: flex;
+  justify-content: space-around;
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding:1.45rem ;  
+  margin-left: 2.5rem;
   font-size: 18px;
-  opacity: 0.75;
+  opacity: 0.75; 
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -95,6 +104,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+    margin-left: 2rem;
 }
 .social-icon {
     display: inline-block;
